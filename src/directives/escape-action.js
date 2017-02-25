@@ -12,7 +12,7 @@
 
                         if (event.which === 27) {
                             scope.$apply(function () {
-                                scope.$eval(attrs.escapeAction);
+                                scope.$eval(attrs.h22EscapeAction);
                             });
 
                             event.preventDefault();
