@@ -6,6 +6,8 @@
 
         function () {
 
+            var NO_CONNECTION = -1;
+
             return {
 
                 error: null,
@@ -31,7 +33,15 @@
 
                 if (error) {
 
-                    parsedError.errors.push(error.data || error);
+                    if (error.data) {
+                        parsedError.errors.push(error.data);
+                    }
+                    else if (error.status === NO_CONNECTION) {
+                        parsedError.errors.push("Could not connect");
+                    }
+                    else {
+                        parsedError.errors.push(error);
+                    }
 
                 }
                 else {
