@@ -11,6 +11,7 @@
             return {
 
                 error: null,
+                hasErrors: hasErrors,
                 addError: addError,
                 clearError: clearError
 
@@ -26,6 +27,9 @@
                 this.error = null;
             }
 
+            function hasErrors() {
+                this.error != null;
+            }
 
             function parse(header, error) {
 

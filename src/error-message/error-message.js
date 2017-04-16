@@ -18,6 +18,12 @@
 
                     $element.draggable();
 
+                    $scope.close = function () {
+
+                        errorService.clearError();
+
+                    };
+
                 }
 
             };

@@ -1,12 +1,14 @@
 ﻿<div ng-show="errorService.error" class="popup error-popup" h22-escape-action="errorService.clearError()">
-    <div ng-click="errorService.clearError()" class="popup-close">[ X ]</div>
     <div class="error">{{ errorService.error.header }}</div>
     <div style="font-size: 0.9em; margin-top: 10px;">
         <div ng-show="errorService.error.httpStatusCode != null"><span style="display: inline-block; width: 100px; font-weight: bold;">HTTP Code:</span>{{ errorService.error.httpStatusCode }}</div>
         <div ng-show="errorService.error.responseCode != null"><span style="display: inline-block; width: 100px; font-weight: bold;">Error Code:</span>{{ errorService.error.responseCode }} <span ng-show="errorService.error.errorCodeText">({{ errorService.error.errorCodeText }})</span></div>
     </div>
-    <div class="error-details" style="margin-top: 10px;">
+    <div class="error-details" style="margin-top: ">
         <div ng-repeat="message in errorService.error.errors">{{ message }}</div>
         <div ng-show="!errorService.error.errors || errorService.error.errors.length == 0">No details available.</div>
+    </div>
+    <div class="buttons">
+        <button type="button" ng-click="close()" h22-focus-me="errorService.error">OK</button>
     </div>
 </div>
