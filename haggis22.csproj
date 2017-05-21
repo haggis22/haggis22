@@ -34,9 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="build\haggis22.css" />
+    <Content Include="build\haggis22.js" />
     <Content Include="gulpfile.js" />
     <Content Include="src\ajax-message\ajax-message.js" />
     <Content Include="src\ajax-message\ajax-message-template.html" />
+    <None Include="README.md" />
     <None Include="src\css\style.scss" />
     <None Include="src\css\tables.scss" />
     <None Include="src\css\forms.scss" />

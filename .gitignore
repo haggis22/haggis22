@@ -11,8 +11,3 @@ node_modules
 logs
 *.log
 
-# locally-built folders for running local server
-build
-
-# locally-built folders for serving up the site
-client
