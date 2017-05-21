@@ -8,8 +8,7 @@ Include the haggis22.js Javascript script file after including Angular.  Link to
 
 ### Prerequisites
 
-Depends up on AngularJS version 1.x to run
-Needs Gulp to rebuild the project if changes are made.
+Depends up on AngularJS version 1.x to run. Needs Gulp to rebuild the project if changes are made.
 
 ```
 npm install gulp
@@ -30,6 +29,14 @@ npm install
 ```
 
 The default gulp task will re-build both the haggis22.js and haggis22.css files and put them in the `build` folder.
+
+```
+gulp 
+```
+or
+```
+gulp default
+```
 
 
 ## License
