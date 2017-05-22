@@ -39,6 +39,7 @@
     <Content Include="gulpfile.js" />
     <Content Include="src\ajax-message\ajax-message.js" />
     <Content Include="src\ajax-message\ajax-message-template.html" />
+    <Content Include="LICENSE.txt" />
     <None Include="README.md" />
     <None Include="src\css\style.scss" />
     <None Include="src\css\tables.scss" />
