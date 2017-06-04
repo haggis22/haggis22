@@ -44,7 +44,8 @@
                         parsedError.errors.push("Could not connect");
                     }
                     else {
-                        parsedError.errors.push(error);
+                        // parsedError.errors.push(error);
+                        parsedError.errors.push("Unknown error");
                     }
 
                 }
